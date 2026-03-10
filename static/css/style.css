@@ -1,0 +1,410 @@
+/* Global Styles */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --success-color: #198754;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #0dcaf0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+/* Navigation */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.navbar-brand i {
+    margin-right: 8px;
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 60px 0;
+}
+
+.hero-section h1 {
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.hero-section .lead {
+    color: #5a6c7d;
+    font-size: 1.1rem;
+}
+
+.feature-badges {
+    margin-top: 20px;
+}
+
+.feature-badges .badge {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+/* Upload Card */
+.upload-card .card {
+    border: none;
+    border-radius: 15px;
+}
+
+.upload-area {
+    border: 3px dashed #0d6efd;
+    border-radius: 10px;
+    padding: 50px 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.upload-area:hover {
+    background: #e9ecef;
+    border-color: #0a58ca;
+}
+
+.upload-area i {
+    display: block;
+    color: #0d6efd;
+}
+
+#filePreview {
+    text-align: center;
+}
+
+#previewImage {
+    max-height: 300px;
+    border: 2px solid #dee2e6;
+}
+
+#fileName {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Results Section */
+.results-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.result-card {
+    border: none;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+}
+
+.result-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#resultIcon {
+    font-size: 4rem;
+}
+
+.result-card .progress {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.result-card .progress-bar {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Cards */
+.card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-header {
+    border-bottom: none;
+    font-weight: 600;
+}
+
+/* Statistical Features Display */
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.stat-item:last-child {
+    border-bottom: none;
+}
+
+.stat-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.stat-value {
+    color: #0d6efd;
+    font-weight: 700;
+}
+
+/* Manipulation Indicators */
+.indicator-item {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background: #f8f9fa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.indicator-item.detected {
+    background: #fff3cd;
+    border-left: 4px solid #ffc107;
+}
+
+.indicator-item.not-detected {
+    background: #d1e7dd;
+    border-left: 4px solid #198754;
+}
+
+.indicator-icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+/* Process Flow (How It Works) */
+.process-flow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.process-step {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 10px;
+    color: white;
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: #667eea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 auto 15px;
+}
+
+.process-step h5 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.process-step p {
+    font-size: 0.85rem;
+    margin: 0;
+    opacity: 0.9;
+}
+
+.arrow {
+    font-size: 2rem;
+    color: #0d6efd;
+}
+
+/* Classification Rules */
+.classification-rules {
+    margin-top: 20px;
+}
+
+.rule-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    margin: 10px 0;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+/* Objectives List */
+.objectives-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.objectives-list li {
+    padding: 12px;
+    margin: 8px 0;
+    background: #f8f9fa;
+    border-left: 4px solid #0d6efd;
+    border-radius: 4px;
+}
+
+.objectives-list li::before {
+    content: "✓ ";
+    color: #198754;
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+/* Application Items */
+.application-item {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.application-item h6 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.application-item i {
+    font-size: 1.5rem;
+}
+
+/* Tech Stack */
+.tech-stack-item {
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 10px;
+    height: 100%;
+}
+
+.tech-stack-item h6 {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.tech-stack-item ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.tech-stack-item li {
+    padding: 5px 0;
+    color: #495057;
+}
+
+.tech-stack-item li::before {
+    content: "▸ ";
+    color: #0d6efd;
+    font-weight: 700;
+}
+
+/* Footer */
+.footer {
+    margin-top: 80px;
+}
+
+/* Loading Spinner */
+#loadingSpinner .spinner-border {
+    width: 3rem;
+    height: 3rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 30px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    
+    .process-flow {
+        flex-direction: column;
+    }
+    
+    .arrow {
+        transform: rotate(90deg);
+        margin: 10px 0;
+    }
+    
+    .process-step {
+        width: 100%;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.5s ease;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    padding: 12px 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-lg {
+    padding: 15px 40px;
+    font-size: 1.1rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

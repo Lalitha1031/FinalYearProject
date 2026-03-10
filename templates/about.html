@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Image Forgery Detection</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-shield-alt"></i> Image Forgery Detector
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/how-it-works">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content -->
+    <div class="container my-5">
+        <h1 class="text-center mb-5">About This Project</h1>
+
+        <!-- Project Overview -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-body p-4">
+                        <h3 class="card-title mb-4">Project Overview</h3>
+                        <p class="lead">
+                            This project presents a web-based image forgery detection system designed for the era of AI-generated content by integrating traditional forensic techniques with neural forensic methods.
+                        </p>
+                        <p>
+                            In the digital era, images play a crucial role in social media, journalism, legal documentation, and online communication. With the rapid advancement of artificial intelligence, modern image generation tools have made it possible to create highly realistic synthetic and manipulated images. This has significantly increased the risks of misinformation, digital fraud, and misuse of visual evidence.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Objectives -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fas fa-bullseye"></i> Project Objectives</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="objectives-list">
+                            <li>Develop a browser-based image forgery detection system</li>
+                            <li>Apply Error Level Analysis (ELA) for compression-based anomaly detection</li>
+                            <li>Extract statistical features (mean intensity, variance, standard deviation) from ELA outputs</li>
+                            <li>Detect Photoshop-based manipulations including noise inconsistencies, cloning/copy-move regions, edge artifacts, and color blending anomalies</li>
+                            <li>Classify images as Original or Morphed/Edited using rule-based, interpretable logic</li>
+                            <li>Generate forensic visualizations and explanations understandable to general users</li>
+                            <li>Support lightweight, non-machine learning forensic workflows suitable for academic use</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Applications -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-header bg-success text-white">
+                        <h5 class="mb-0"><i class="fas fa-laptop-code"></i> Real-World Applications</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <div class="application-item">
+                                    <h6><i class="fas fa-search text-primary"></i> Digital Image Forensics</h6>
+                                    <p>Helps analysts verify image authenticity by examining compression and manipulation artifacts</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="application-item">
+                                    <h6><i class="fas fa-newspaper text-primary"></i> Media & Journalism</h6>
+                                    <p>Detects manipulated or synthetic images before publication to reduce misinformation</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="application-item">
+                                    <h6><i class="fas fa-gavel text-primary"></i> Legal & Investigative</h6>
+                                    <p>Validates digital image evidence with transparency and explainability</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="application-item">
+                                    <h6><i class="fas fa-graduation-cap text-primary"></i> Academic & Educational</h6>
+                                    <p>Assists students and researchers in understanding image forgery techniques</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="application-item">
+                                    <h6><i class="fas fa-share-alt text-primary"></i> Social Media Verification</h6>
+                                    <p>Identifies edited or AI-generated images shared online</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <div class="application-item">
+                                    <h6><i class="fas fa-shield-alt text-primary"></i> Digital Security</h6>
+                                    <p>Protects against digital fraud and misuse of visual evidence</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Technology Stack -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0"><i class="fas fa-code"></i> Technology Stack</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-4 mb-3">
+                                <div class="tech-stack-item">
+                                    <h6>Frontend</h6>
+                                    <ul>
+                                        <li>HTML5</li>
+                                        <li>CSS3</li>
+                                        <li>Bootstrap 5</li>
+                                        <li>JavaScript</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="tech-stack-item">
+                                    <h6>Backend</h6>
+                                    <ul>
+                                        <li>Python 3.8+</li>
+                                        <li>Flask Framework</li>
+                                        <li>RESTful API</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-3">
+                                <div class="tech-stack-item">
+                                    <h6>Analysis Libraries</h6>
+                                    <ul>
+                                        <li>OpenCV</li>
+                                        <li>NumPy</li>
+                                        <li>PIL/Pillow</li>
+                                        <li>scikit-image</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Future Scope -->
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-header bg-warning text-dark">
+                        <h5 class="mb-0"><i class="fas fa-rocket"></i> Future Enhancements</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul>
+                            <li>Integration of machine learning or deep learning models for improved accuracy</li>
+                            <li>Enhanced AI-generated and deepfake image detection</li>
+                            <li>Support for additional image formats (PNG, WebP)</li>
+                            <li>Precise localization of manipulated regions using heatmaps</li>
+                            <li>Mobile and desktop application development</li>
+                            <li>Real-time integration with social media platforms</li>
+                            <li>Advanced neural forensic features for GAN-synthesized images</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2025 AI Image Forgery Detection System | Final Year Project</p>
+            <p class="text-muted small">Built with ELA, Statistical Analysis, and Manipulation Detection</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
